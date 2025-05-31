@@ -10,12 +10,12 @@ export default function Header() {
     return (
         <header >
             <div className="header-wrapper background-white flex align-center space-between">
-                <div className="dev-title color-orange">
+                <div className="dev-title color-white">
                     Muhammad Usman Latif
                 </div>
                 <div className={active ? "header-nav open" : "header-nav"}>
                     <nav className="navigation">
-                        <ul className="nav-list color-orange gap-1 flex align-center">
+                        <ul className="nav-list color-white gap-1 flex align-center">
                             <li><a href="#About">About</a></li>
                             <li><a href="#Projects">Projects</a></li>
                             <li><a href="#contact">Contact Us</a></li>

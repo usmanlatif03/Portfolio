@@ -8,7 +8,7 @@ import OverView from './overview.jsx'
 import App from './App.jsx'
 import TechStack from './tech-stack.jsx'
 import Experience from './experience.jsx'
-import ProjectsRfm from './projects-rfm.jsx'
+import Projects from './projects.jsx'
 import Footer from './footer.jsx'
 import MainBanner from './main-banner.jsx'
 
@@ -20,8 +20,8 @@ createRoot(document.getElementById('root')).render(
     <MainBanner />
     <AboutMe />
     <TechStack />
-    <ProjectsRfm/>
-    <Experience/>
+    <Projects/>
+    {/* <Experience/> */}
     <Footer/>
   </StrictMode>
 )

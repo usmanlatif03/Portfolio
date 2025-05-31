@@ -24,7 +24,8 @@ body::-webkit-scrollbar-track {
 
 a {
   font-weight: 500;
-  color: #f28e1c;
+  /* color: #f28e1c; */
+  color: #fff;
   text-decoration: inherit;
 }
 /* a:hover {
