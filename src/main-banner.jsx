@@ -9,7 +9,7 @@ function MainBanner(){
                     <p>After Effects | Premiere Pro | Blender</p>
                 </div>
                 <div className="portfolio-img" data-aos="zoom-in-left" data-aos-duration="1000">
-                    <img src="./assets/ChatGPT Image May 31, 2025, 11_13_18 PM.png" alt="Muhammad Usman Latif" />
+                    <img src="./ChatGPT Image May 31, 2025, 11_13_18 PM.png" alt="Muhammad Usman Latif" />
                 </div>
             </div>
         </div>
