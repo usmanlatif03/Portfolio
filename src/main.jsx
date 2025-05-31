@@ -20,7 +20,7 @@ createRoot(document.getElementById('root')).render(
     <MainBanner />
     <AboutMe />
     <TechStack />
-    <Projects/>
+    {/* <Projects/> */}
     {/* <Experience/> */}
     <Footer/>
   </StrictMode>
