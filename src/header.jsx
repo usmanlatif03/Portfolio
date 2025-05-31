@@ -18,7 +18,7 @@ export default function Header() {
                         <ul className="nav-list color-orange gap-1 flex align-center">
                             <li><a href="#About">About</a></li>
                             <li><a href="#Projects">Projects</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
                         </ul>
                     </nav>
                 </div>
