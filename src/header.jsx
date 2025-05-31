@@ -11,7 +11,7 @@ export default function Header() {
         <header >
             <div className="header-wrapper background-white flex align-center space-between">
                 <div className="dev-title color-orange">
-                    Muhammad Hassan Latif
+                    Muhammad Usman Latif
                 </div>
                 <div className={active ? "header-nav open" : "header-nav"}>
                     <nav className="navigation">
