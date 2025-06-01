@@ -16,7 +16,7 @@ function AboutMe() {
           </p>
         </div>
         <div className="about-me-img" data-aos="zoom-out-left">
-          <img src="./assets/IMG_0010-removebg-preview.png" alt="Muhammad Hassan Latif" />
+          <img src="/IMG_0010-removebg-preview.png" alt="Muhammad Hassan Latif" />
         </div>
       </div>
       <div
@@ -28,7 +28,7 @@ function AboutMe() {
         <div className="skill skill-2 flex align-center justify-center">
           <div className="skill-box color-white">
             <div className="skill-icon">
-              <img src="/assets/montage.png" alt="Front End Developer" />
+              <img src="/montage.png" alt="Front End Developer" />
             </div>
             <div className="skill-name">Video Editor</div>
           </div>
@@ -37,7 +37,7 @@ function AboutMe() {
         <div className="skill skill-1 flex align-center justify-center">
           <div className="skill-box color-white">
             <div className="skill-icon">
-              <img src="/assets/after-effects.png" alt="Shopify Developer" />
+              <img src="/after-effects.png" alt="Shopify Developer" />
             </div>
             <div className="skill-name">After Effects</div>
           </div>
@@ -46,7 +46,7 @@ function AboutMe() {
         <div className="skill skill-3 flex align-center justify-center">
           <div className="skill-box color-white">
             <div className="skill-icon">
-              <img src="/assets/premiere.png" alt="Js Developer" />
+              <img src="/premiere.png" alt="Js Developer" />
             </div>
             <div className="skill-name">Premiere Pro</div>
           </div>
@@ -55,7 +55,7 @@ function AboutMe() {
         <div className="skill skill-4 flex align-center justify-center">
           <div className="skill-box color-white">
             <div className="skill-icon">
-              <img  src="/assets/pngwing.com (20).png" alt="Web App Developer" />
+              <img  src="/pngwing.com (20).png" alt="Web App Developer" />
             </div>
             <div className="skill-name">Blender</div>
           </div>

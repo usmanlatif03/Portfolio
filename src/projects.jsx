@@ -9,16 +9,16 @@ import { Autoplay,FreeMode } from 'swiper/modules';
 export default function Projects() {
     const [swiperRef, setSwiperRef] = useState(null);
      const slideVideos = [
-        {title:"Intro Video", video:"/assets/Comp 1.mp4", alt:"https://ethnc.com/", type:'AE/ME/Topaz'},
-        {title:"Car content", video:"/assets/mk5.mp4", alt:"https://image1993.com/", type:'AE/ME/Topaz'},
-        {title:"Short VFX", video:"/assets/SNOOKER VFX.mp4", alt:"https://www.nuriyaa.com/", type:'AE/ME/PS/Topaz'},
-        {title:"Podcast Reel", video:"/assets/podcast.mp4", alt:"https://scrubser-shop.com/", type:'AE/ME/Topaz'},
-        {title:"Iman Ghazi Style", video:"/assets/SAMPLE 2.mp4", alt:"https://maryumnmariauae.com/", type:'AE/ME/Topaz'},
-        {title:"Advertise and Commercial", video:"/assets/Commercial and Advertising 1.mp4", alt:"https://outfitters.com.pk/", type:'AE/ME/Topaz'},
-        {title:"Time Remap Edit", video:"/assets/PAL PAL.mp4", alt:"https://sparx.pk/", type:'AE/ME/Topaz'},
-        {title:"Face Quality Edit", video:"/assets/FACE FINAL.mp4", alt:"https://vyntage.com/", type:'AE/ME/Topaz'},
-        {title:"Lobby Edit", video:"/assets/FF!!.mp4", alt:"https://shop.panthertyres.com/", type:'Blender/AE/ME/Topaz'},
-        {title:"Gameplay Edit", video:"/assets/KAMBOJ 5.mp4", alt:"", type:'AE/ME/Topaz'},
+        {title:"Intro Video", video:"https://youtu.be/IddEalpBlZc", alt:"https://ethnc.com/", type:'AE/ME/Topaz'},
+        {title:"Car content", video:"https://youtu.be/as1QpLT3T18", alt:"https://image1993.com/", type:'AE/ME/Topaz'},
+        {title:"Short VFX", video:"https://youtu.be/S4VyKzTlkgQ", alt:"https://www.nuriyaa.com/", type:'AE/ME/PS/Topaz'},
+        {title:"Podcast Reel", video:"https://youtu.be/g4xqJGVXbug", alt:"https://scrubser-shop.com/", type:'AE/ME/Topaz'},
+        {title:"Iman Ghazi Style", video:"https://youtu.be/pEH5u6eveWk", alt:"https://maryumnmariauae.com/", type:'AE/ME/Topaz'},
+        {title:"Advertise and Commercial", video:"https://youtu.be/dnvSKdifals", alt:"https://outfitters.com.pk/", type:'AE/ME/Topaz'},
+        {title:"Time Remap Edit", video:"https://youtu.be/tEnA3VeEt8U", alt:"https://sparx.pk/", type:'AE/ME/Topaz'},
+        {title:"Face Quality Edit", video:"https://youtu.be/T6_znLeEqgg", alt:"https://vyntage.com/", type:'AE/ME/Topaz'},
+        {title:"Lobby Edit", video:"https://youtu.be/TIdFFnWdkGY", alt:"https://shop.panthertyres.com/", type:'Blender/AE/ME/Topaz'},
+        {title:"Gameplay Edit", video:"https://youtu.be/jow5oDO83gE", alt:"", type:'AE/ME/Topaz'},
     ];
   return (
       <>
@@ -53,25 +53,50 @@ export default function Projects() {
                     }}
                 className="mySwiper"
             >
-                {slideVideos.map ((slide , index) => (
-                    <SwiperSlide className='swiper-slide ' >
-                        <div className='project-card pos-relative' >
-                            <a className='project-link'  target="_blank" aria-label={slide.title}>
-                                <video
-                                    className='project-video'
-                                    src={slide.video}
-                                    controls
-                                    loop
-                                    autoPlay
-                                    playsInline
-                                    muted
-                                />
-                                <span className='type-badge'>{slide.type}</span>
-                                <p className='project-title'>{slide.title}</p>
-                            </a>
-                        </div>
-                    </SwiperSlide>
-                ))}
+                {slideVideos.map((slide, index) => {
+                    // Convert YouTube link to embed format
+                    const isYouTube = slide.video.includes("youtube.com") || slide.video.includes("youtu.be");
+                    let embedUrl = "";
+
+                    if (isYouTube) {
+                        const videoId = slide.video.includes("youtu.be")
+                            ? slide.video.split("youtu.be/")[1]
+                            : slide.video.split("v=")[1]?.split("&")[0];
+                        embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}`;
+                    }
+
+                    return (
+                        <SwiperSlide key={index} className="swiper-slide">
+                            <div className="project-card pos-relative">
+                                <a className="project-link" href={slide.alt} target="_blank" aria-label={slide.title}>
+                                    {isYouTube ? (
+                                        <iframe
+                                            className="project-video"
+                                            src={embedUrl}
+                                            title={slide.title}
+                                            allow="autoplay; encrypted-media"
+                                            allowFullScreen
+                                            frameBorder="0"
+                                        ></iframe>
+                                    ) : (
+                                        <video
+                                            className="project-video"
+                                            src={slide.video}
+                                            controls
+                                            loop
+                                            autoPlay
+                                            playsInline
+                                            muted
+                                        />
+                                    )}
+                                    <span className="type-badge">{slide.type}</span>
+                                    <p className="project-title">{slide.title}</p>
+                                </a>
+                            </div>
+                        </SwiperSlide>
+                    );
+                })}
+
             </Swiper>
         </div>
         </div>

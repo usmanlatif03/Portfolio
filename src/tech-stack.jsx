@@ -16,25 +16,25 @@ export default function TechStack() {
             data-aos="fade-up"
           >
             <div className="tech-skill skill-1">
-              <img src="/assets/after-effects.png" alt="After Effects" />
+              <img src="/after-effects.png" alt="After Effects" />
             </div>
             <div className="tech-skill skill-2">
-              <img src="/assets/premiere.png" alt="Adobe Premiere Pro" />
+              <img src="/premiere.png" alt="Adobe Premiere Pro" />
             </div>
             <div className="tech-skill skill-3">
-              <img src="/assets/Adobe Media Encoder CC.png" alt="Adobe Media Encoder" />
+              <img src="/Adobe Media Encoder CC.png" alt="Adobe Media Encoder" />
             </div>
             <div className="tech-skill skill-4">
-              <img src="/assets/pngwing.com (20).png" alt="Blender" />
+              <img src="/pngwing.com (20).png" alt="Blender" />
             </div>
             <div className="tech-skill skill-5">
-              <img src="/assets/topaz.svg" alt="Topaz" />
+              <img src="/topaz.svg" alt="Topaz" />
             </div>
             <div className="tech-skill skill-6">
-              <img src="/assets/pngwing.com (21).png" alt="Adobe Photoshop" />
+              <img src="/pngwing.com (21).png" alt="Adobe Photoshop" />
             </div>
             <div className="tech-skill skill-7">
-              <img src="/assets/pngwing.com (22).png" alt="Canva" />
+              <img src="/pngwing.com (22).png" alt="Canva" />
             </div>
           </div>
         </div>
