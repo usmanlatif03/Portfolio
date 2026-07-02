@@ -4,7 +4,7 @@ export default function Footer(){
             <div className="footer-wrapper">
                 <div className="footer-content color-white" data-aos="fade-up" >
                     <h2 className="footer-title">Get In Touch</h2>
-                    <p className="footer-description"> Based in Lahore, Pakistan. For inquiries or collaborations, feel free to <a  className="color-white" href="tel:+923120452712" aria-label="Phone Number">shedule a call</a> or email <a className="color-white" href="mailto:xsilent664@gmail.com" aria-label="Email">@usmanlatif.com</a>. </p>
+                    <p className="footer-description"> Based in Lahore, Pakistan. For inquiries or collaborations, feel free to <a  className="color-white" href="tel:+923120452712" aria-label="Phone Number">schedule a call</a> or email <a className="color-white" href="mailto:xsilent664@gmail.com" aria-label="Email">xsilent664@gmail.com</a>. </p>
                     <p className="social-icons flex align-center gap-1 justify-center">
                         <a href="https://www.linkedin.com/in/usman-latif-b54430363/" target="blank" aria-label="Linkedin">
                             <img src="/linkedin-custom.png" alt="Linkedin" />

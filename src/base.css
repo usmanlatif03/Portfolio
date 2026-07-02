@@ -233,6 +233,7 @@ span.type-badge {
     padding: 0px 15px;
     line-height: 25px;
     border: 1px solid #fff;
+    color: #fff;
 }
 p.project-title {
     margin: 0;
@@ -481,5 +482,306 @@ p.social-icons {
     .tech-skill-container , .overview-skill-wrapper{
         flex-wrap: wrap;
     }
-    
+
+}
+
+/* ==========================================================================
+   NEW SECTIONS — buttons, services, portfolio filters, skills groups,
+   testimonials, FAQ.  (Added during the full-service restructure.)
+   ========================================================================== */
+
+/* --- Buttons / CTAs --- */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.6rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    text-align: center;
+}
+.btn-primary {
+    background: #f28e1c;
+    color: #0d1b2a;
+    border: 1px solid #f28e1c;
+}
+.btn-primary:hover {
+    background: transparent;
+    color: #f28e1c;
+}
+.btn-outline {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #f28e1c;
+}
+.btn-outline:hover {
+    background: #f28e1c;
+    color: #0d1b2a;
+}
+.hero-cta {
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+.hero-banner-content h1 {
+    font-size: 2.6rem;
+    margin: 0.5rem 0;
+    line-height: 1.15;
+}
+
+/* --- Section headings (reuse existing sizing) --- */
+.services-container , .testimonials-container , .faq-container {
+    padding: 2rem 0;
+}
+.services-wrapper , .testimonials-wrapper , .faq-wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+.services-head h5 , .testimonials-head h5 , .faq-head h5 {
+    font-size: 18px;
+    margin: 0;
+    text-transform: uppercase;
+}
+.services-head h2 , .testimonials-head h2 , .faq-head h2 {
+    font-size: 48px;
+    margin: 0 0 2rem;
+    text-transform: uppercase;
+}
+
+/* --- Services grid --- */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+.service-card {
+    background: rgb(7, 20, 31);
+    border: 1px solid rgba(242, 142, 28, 0.25);
+    border-radius: 15px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.service-card:hover {
+    transform: translateY(-6px);
+    border-color: #f28e1c;
+}
+.service-icon {
+    font-size: 2.5rem;
+    line-height: 1;
+}
+.service-title {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.4rem;
+}
+.service-blurb {
+    margin: 0 0 1rem;
+    opacity: 0.85;
+}
+.service-included {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+    flex-grow: 1;
+}
+.service-included li {
+    padding: 0.4rem 0 0.4rem 1.4rem;
+    position: relative;
+    line-height: 1.35;
+}
+.service-included li::before {
+    content: "▹";
+    color: #f28e1c;
+    position: absolute;
+    left: 0;
+}
+.service-cta {
+    align-self: flex-start;
+}
+
+/* --- Portfolio filters + grid --- */
+.portfolio-filters {
+    flex-wrap: wrap;
+    margin: 0 auto 2rem;
+    max-width: 80%;
+}
+.filter-btn {
+    background: transparent;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 30px;
+    padding: 0.5rem 1.2rem;
+    font-weight: 500;
+    transition: all 0.25s ease;
+}
+.filter-btn:hover {
+    border-color: #f28e1c;
+}
+.filter-btn.active {
+    background: #f28e1c;
+    color: #0d1b2a;
+    border-color: #f28e1c;
+}
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: 80%;
+    margin: 0 auto;
+}
+.portfolio-grid .project-card {
+    background: rgb(7, 20, 31);
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+.design-placeholder {
+    width: 100%;
+    aspect-ratio: 4/2;
+    border-radius: 10px;
+    border: 1px dashed rgba(255, 255, 255, 0.35);
+    background: linear-gradient(135deg, #0d1b2a, #145b6f);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-weight: 600;
+}
+.case-study-card {
+    background: rgb(7, 20, 31);
+    border: 1px solid rgba(242, 142, 28, 0.25);
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+.case-study-title {
+    margin: 0 0 1rem;
+    color: #f28e1c;
+}
+.case-study-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+}
+.case-study-list li {
+    padding: 0.35rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* --- Skill emoji (About cards) --- */
+.skill-emoji {
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+/* --- Skills grouped columns --- */
+.skills-groups {
+    gap: 2rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+.skills-group {
+    flex: 1;
+    min-width: 200px;
+    background: rgb(7, 20, 31);
+    border-radius: 15px;
+    padding: 1.5rem;
+}
+.skills-group-title {
+    color: #f28e1c;
+    margin: 0 0 1rem;
+}
+.skills-group-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 2;
+}
+
+/* --- Testimonials --- */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+.testimonial-card {
+    background: rgb(7, 20, 31);
+    border-radius: 15px;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.testimonial-quote {
+    font-style: italic;
+    line-height: 1.5;
+    margin: 0 0 1.5rem;
+}
+.testimonial-author {
+    display: flex;
+    flex-direction: column;
+}
+.testimonial-name {
+    font-weight: 700;
+    color: #f28e1c;
+}
+.testimonial-role {
+    font-size: 0.9rem;
+    opacity: 0.75;
+}
+
+/* --- FAQ accordion --- */
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.faq-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+.faq-question {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: left;
+    padding: 1.2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.faq-question:hover {
+    border-color: transparent;
+    color: #f28e1c;
+}
+.faq-toggle {
+    color: #f28e1c;
+    font-size: 1.5rem;
+}
+.faq-answer {
+    padding: 0 0 1.2rem;
+    line-height: 1.5;
+    opacity: 0.85;
+}
+
+/* --- Responsive: new sections --- */
+@media screen and (max-width: 767px) {
+    .services-grid , .portfolio-grid , .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+    .services-wrapper , .testimonials-wrapper , .faq-wrapper {
+        max-width: 90%;
+    }
+    .portfolio-grid , .portfolio-filters {
+        max-width: 90%;
+    }
+    .services-head h2 , .testimonials-head h2 , .faq-head h2 {
+        font-size: 36px;
+    }
+    .hero-banner-content h1 {
+        font-size: 2rem;
+    }
+    .skills-groups {
+        flex-direction: column;
+    }
 }

@@ -11,14 +11,18 @@ export default function Header() {
         <header >
             <div className="header-wrapper background-white flex align-center space-between">
                 <div className="dev-title color-white">
-                    Muhammad Usman Latif
+                    <a href="#Home">Usman Latif</a>
                 </div>
                 <div className={active ? "header-nav open" : "header-nav"}>
                     <nav className="navigation">
-                        <ul className="nav-list color-white gap-1 flex align-center">
+                        <ul className="nav-list color-white gap-1 flex align-center" onClick={() => setActive(false)}>
                             <li><a href="#About">About</a></li>
-                            <li><a href="#Projects">Projects</a></li>
-                            <li><a href="#contact">Contact Us</a></li>
+                            <li><a href="#Services">Services</a></li>
+                            <li><a href="#Portfolio">Portfolio</a></li>
+                            <li><a href="#Skills">Skills</a></li>
+                            <li><a href="#Testimonials">Testimonials</a></li>
+                            <li><a href="#FAQ">FAQ</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
