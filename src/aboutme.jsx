@@ -18,7 +18,7 @@ function AboutMe() {
           </p>
         </div>
         <div className="about-me-img" data-aos="zoom-out-left">
-          <img src="/IMG_0010-removebg-preview.png" alt="Usman Latif" />
+          <img src="/portfolioImg.jpeg" alt="Usman Latif" />
         </div>
       </div>
       <div
